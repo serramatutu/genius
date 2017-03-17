@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Genius - Simon Game</title>
+
+        <script type="application/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
+        <script type="application/javascript" src="js/genius.js"></script>
+
+        <!-- Compila arquivos de Less -->
+        <link type="text/css" rel="stylesheet/less" href="style/genius.less">
+        <script type="text/javascript" src="js/lib/less.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style/img/font/flaticon.css">
+    </head>
+    <body>
+        <div class="container-main">
+            <div class="container header">
+                <div class="letter">G</div>
+                <div class="letter">E</div>
+                <div class="letter">N</div>
+                <div class="letter">I</div>
+                <div class="letter">U</div>
+                <div class="letter">S</div>
+            </div>
+            <div class="container controls-wrapper">
+                <div class="container colorbuttons">
+                    <div class="button colorbutton red"></div>
+                    <div class="button colorbutton blue"></div>
+                    <div class="button colorbutton green"></div>
+                    <div class="button colorbutton yellow"></div>
+                </div>
+                <div class="container logger-wrapper">
+                    <div class="container logger"></div>
+                    <div class="button startgame">start_game</div>
+                </div>
+            </div>
+            <div class="container settings-wrapper">
+                <div class="container records"></div>
+                <div class="container settings">
+                    <div class="container difficulty">
+                        <div class="label">Dificuldade:</div>
+                        <select id="difficulty-selector"></select>
+                    </div>
+                    <div class="container volume-wrapper">
+                        <label class="switch">
+                            <input type="checkbox" id="volume-button"/>
+                            <div class="switch-slider volume"></div>
+                        </label>
+                        <div class="click-informer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
